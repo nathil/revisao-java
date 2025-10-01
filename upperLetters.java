@@ -3,7 +3,6 @@
 class UpperLetters {
 
 	public String upperLetters(String phrase) {
-    String newPhrase = ""; 
     
     if(phrase == null || phrase.isEmpty()){
       return null; 
@@ -15,11 +14,7 @@ class UpperLetters {
       words[i] =  Character.toUpperCase(words[i].charAt(0)) + words[i].substring(1); 
     }
     
-    for(String word: words){
-      newPhrase = String.join(" ", words); 
-    }
-    
-		return newPhrase;
+		return String.join(" ", words);
     
 	}
 
