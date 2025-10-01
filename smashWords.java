@@ -6,7 +6,7 @@ class SmashWords {
     String result = ""; 
     
     for(int i=0; i<words.length; i++){
-      result = String.join(" ", words); 
+      result = String.join(" ", words);  
     }
     
     return result;
